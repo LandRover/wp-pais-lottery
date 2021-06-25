@@ -587,7 +587,7 @@ function pais_lottery_widget($attributes) {
 
         // patch, replacing the old ugly icon, with a better one
         // proper place, is the generic parser, via config.  Didnt find the time, sry.
-        $pattern = '/<div class="the_card_title">([0-9]{1,2})<\/div>/i';
+        $pattern = '/<div class="the_card_title">([A-Z0-9]{1,2})<\/div>/i';
         $replacement = '<div class="the_card_title"><div class="brd"><div class="icon"></div><span>$1</span></div></div>';
         $tpl = preg_replace($pattern, $replacement, $tpl);
 
