@@ -670,28 +670,46 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 721px) {
-  .pais_lottery.lottery_statistics.tofesyashir_chance .the_card_title {
-    font-size: 18px;
-    padding-top: 39px;
-  }
-  .pais_lottery.lottery_statistics.tofesyashir_chance .jump_num_card {
-    padding: 18px 0 20px;
-  }
+/** proper icons for chance **/
 
-  .pais_lottery.lottery_statistics.tofesyashir_chance
-    .Lev_jumps
-    .the_card_title {
-    background-position: -37px;
-  }
-  .pais_lottery.lottery_statistics.tofesyashir_chance
-    .Yhalom_jumps
-    .the_card_title {
-    background-position: -75px;
-  }
-  .pais_lottery.lottery_statistics.tofesyashir_chance
-    .Tiltan_jumps
-    .the_card_title {
-    background-position: -112px;
-  }
+.pais_lottery.lottery_statistics.tofesyashir_chance .the_card_title {
+	background: none;
+	padding: 10px 0 5px;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .brd {
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .brd .icon {
+	height: 30px;
+	width: 24px;
+	margin: 0 auto 2px;
+	background: url(../images/chanceresuleballs-nobg.gif) no-repeat;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .brd span {
+	color: white;
+	background-image: linear-gradient(180deg, #fa7901, #3c1453);
+	display: block;
+	border-radius: 0 0 7px 7px;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .Ale_jumps .brd .icon {
+	background-position: -9px 0;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .Lev_jumps .brd .icon {
+	background-position: -72px 0;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .Yhalom_jumps .brd .icon {
+	background-position: -134px 0;
+}
+
+.pais_lottery.lottery_statistics.tofesyashir_chance .Tiltan_jumps .brd .icon {
+	background-position: -197px 0;
 }
